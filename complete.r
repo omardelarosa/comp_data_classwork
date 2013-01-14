@@ -27,7 +27,7 @@ complete <- function(directory, id = 1:332) {
     currentMonitor <- getmonitor(i,directory)  
    ## data$id[i] <- i
     numComplete <- sum(complete.cases(currentMonitor))
-    dataFrame <- rbind(dataFrame,data.frame(id=idNum,nobs=numComplete))
+    dataFrame <- rbind(dataFrame,data.frame(id=i,nobs=numComplete))
     #print(i)
     i <- i + 1
     dataFrameNew <- dataFrame
