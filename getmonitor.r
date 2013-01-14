@@ -21,8 +21,7 @@ getmonitor <- function(id, directory, summarize = FALSE) {
   data <- read.csv(filename,header=TRUE)
   
   if (summarize==TRUE) {
-    summary(data)
+    print(summary(data))
   }
-  
   return(data)
 }

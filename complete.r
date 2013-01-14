@@ -3,7 +3,7 @@ complete <- function(directory, id = 1:332) {
   ## the location of the CSV files
   
   ## 'id' is an integer vector indicating the monitor ID numbers
-  ## to be used
+  ## to be used.
   
   ## Return a data frame of the form:
   ## id nobs
