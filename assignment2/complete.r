@@ -19,8 +19,6 @@ complete <- function(directory, id = 1:332) {
   
   #print(id)
   
-  
-  
   for(i in id){
     
     idNum <- sprintf("%03d",i)
@@ -29,7 +27,6 @@ complete <- function(directory, id = 1:332) {
     numComplete <- sum(complete.cases(currentMonitor))
     dataFrame <- rbind(dataFrame,data.frame(id=i,nobs=numComplete))
     #print(i)
-    i <- i + 1
     dataFrameNew <- dataFrame
   }
   return(dataFrameNew)
